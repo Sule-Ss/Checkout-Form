@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5c7edfd842.js" crossorigin="anonymous"></script>
+
+    <title>Checkout Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Checkout</h1>
+    </header>
+
+    <div class="container">
+
+        <main>
+
+            <form action="">
+
+                <section
+                >
+                    <h3>Contact information</h3>
+
+                    <label for="email">Email</label>
+                    <nav class="input">
+                        <i class="fas fa-envelope"></i>
+                        <input type="email" name="email" id="email" required placeholder="Enter your email...">
+                    </nav>
+
+                    <label for="phone">Phone</label>
+                    <nav class="input">
+                        <i class="fas fa-phone-alt"></i>
+                        <input type="tel" name="phone" id="phone" required placeholder="Enter your phone...">
+                    </nav>
+
+                </section>
+
+                <section>
+
+                    <h3>Shipping Address</h3>
+
+                    <label for="name">Full name</label>
+                    <nav class="input">
+                        <i class="fas fa-user"></i>
+                        <input type="text" name="name" id="name" required placeholder="Enter your Full name...">
+                    </nav>
+
+                    <label for="address">Address</label>
+                    <nav class="input">
+                        <i class="fas fa-home"></i>
+                        <input type="text" name="address" id="address" required placeholder="Enter your address...">
+                    </nav>
+
+                    <label for="city">City</label>
+                    <nav class="input">
+                        <i class="fas fa-city"></i>
+                        <input type="text" name="city" id="city" required placeholder="Enter your city...">
+                    </nav>
+
+                    <nav class="country-post">
+                        <label for="country">Country</label>
+                        <nav>
+                            <i class="fas fa-globe-europe"></i>
+                            <select name="country" id="country" required>
+                                <option value="Turkey">Turkey</option>
+                                <option value="Germany">Germany</option>
+                                <option value="USA">USA</option>
+                                <option value="Canada">Canada</option>
+                                <option value="UK">UK</option>
+                            </select>
+                        </nav>
+                    </nav>
+
+
+                    <nav class="country-post">
+                        <label for="postCode">Post Code</label>
+                        <nav>
+                            <i class="fas fa-mail-bulk"></i>
+                            <input type="text" name="postCode" id="postCode" required
+                                placeholder="Enter your postal code...">
+                        </nav>
+                    </nav>
+
+                </section>
+
+                <section class="accept">
+                    <input type="checkbox" name="acceptBox" id="acceptBox">
+                    <label for="acceptBox">See this information next time</label>
+                </section>
+
+                <div class="footer-button" >
+                    <button>Continue</button>
+                </div>
+            </form>
+        </main>
+
+        <aside>
+
+            <nav class="image-box">
+                <img src="./img/photo1.png" alt="Vintage Backbag">
+
+                <div class="price">
+                    <h3>Vintage Backbag</h3>
+                    <p><b style="color: orange;">$54.99</b> <small><del>$94.99</del></small></p>
+
+                    <div class="quantitly">
+                        <button>
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <p class="price-button">1</p>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="image-box">
+                <img src="./img/photo2.png" alt="Levi Shoes">
+
+                <div class="price">
+                    <h3>Levi Shoes</h3>
+
+                    <p><b style="color: orange;">$74.99</b> <small><del>$124.99</del></small></p>
+
+                    <div class="quantitly">
+                        <button>
+                            <i class="fas fa-minus"></i>
+                        </button>
+                        <p>1</p>
+                        <button>
+                            <i class="fas fa-plus"></i>
+                        </button>
+                    </div>
+                </div>
+            </nav>
+
+            <nav class="shipping-total">
+                <p><span>Shipping</span> <span>$19</span></p>
+            </nav>
+
+            <nav class="shipping-total">
+                <p><span>Total</span> <span>$148.98</span></p>
+            </nav>
+        </aside>
+
+    </div>
+
+</body>
+
+</html>
